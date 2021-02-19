@@ -6,7 +6,11 @@ const ipdetail = (getIp) => {
     const ip = getIp + "";
     fetch(`https://ipapi.co/${ ip }/json/`)
         .then(res => res.json())
-        .then(data => handleDetails(data));
+        .then(data => handleDetails(data))
+        .catch(error => {
+            const detailsContainer = document.getElementById('details');
+            detailsContainer.innerHTML = `<h1> Something wrong! Please try again after some time!</h1>`;
+        });
 }
 
 const handleDetails = (data) => {
