@@ -22,7 +22,7 @@ const handleDetails = (data) => {
                 <h3 class="m-1">Region: ${data.region}</h3>
                 <h3 class="m-1">Region COde: ${data.region_code}</h3>
                 <h3 class="m-1">Country: ${data.country_name}</h3>
-                <h3 class="m-1">COuntry Code: ${data.country_code}</h3>
+                <h3 class="m-1">Country Code: ${data.country_code}</h3>
                 <h3 class="m-1">Postal Code: ${data.postal}</h3>
                 <h3 class="m-1">Latitude: ${data.latitude}</h3>
                 <h3 class="m-1">Longitude: ${data.longitude}</h3>
